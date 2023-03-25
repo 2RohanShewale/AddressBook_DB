@@ -31,3 +31,6 @@ UPDATE AddressBook_DB SET Address = 'Other location' WHERE LastName = 'Wagh'
 UPDATE AddressBook_DB SET City = 'Karad' WHERE LastName = 'Shewale'
 UPDATE AddressBook_DB SET State = 'Gujrat' WHERE FirstName = 'Shubham'
 UPDATE AddressBook_DB SET Zip = 40054 WHERE FirstName = 'Rohan'
+
+--UC5 Delete contact
+DELETE FROM AddressBook_DB WHERE FirstName = 'Nikita'
