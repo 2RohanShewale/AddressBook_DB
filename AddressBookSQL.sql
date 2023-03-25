@@ -73,3 +73,8 @@ SET AddressbookName = FirstName + LastName
 
 --UC10 get number of contact persons
 SELECT AddressBookType, COUNT (AddressBookType) AS NoOfContactPresent FROM AddressBook_DB GROUP BY AddressBookType
+
+-- UC11 add person to both Friend and Family
+INSERT INTO AddressBook_DB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email,AddressBookType,AddressBookName)
+VALUES ('Ramesh','Shinde','Other location','Mumbai','Maharastra',400022,4634334,'ramesh@gmail.com','Friend','RameshShinde'),
+('Abhishek','Gavankar','location','Pune','Maharastra',400052,46544644,'abhi@gmail.com','Family','Abhi')
