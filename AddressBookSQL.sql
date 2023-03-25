@@ -34,3 +34,7 @@ UPDATE AddressBook_DB SET Zip = 40054 WHERE FirstName = 'Rohan'
 
 --UC5 Delete contact
 DELETE FROM AddressBook_DB WHERE FirstName = 'Nikita'
+
+-- UC6 Retrive By City or State
+SELECT * FROM AddressBook_DB WHERE City = 'Mumbai'
+SELECT * FROM AddressBook_DB WHERE State = 'Maharastra'
