@@ -57,3 +57,19 @@ SELECT * FROM AddressBook_DB WHERE City = 'Thane' ORDER BY FirstName
 ALTER TABLE AddressBook_DB ADD AddressBookType VARCHAR(50)
 ALTER TABLE AddressBook_DB ADD AddressBookName VARCHAR(50)
 
+UPDATE AddressBook_DB
+SET AddressBookType = 'Friend'
+WHERE City = 'Mumbai'
+
+UPDATE AddressBook_DB
+SET AddressbookType = 'Profession'
+WHERE City = 'Pune'
+
+UPDATE AddressBook_DB
+SET AddressbookType = 'Other'
+
+UPDATE AddressBook_DB
+SET AddressbookName = FirstName + LastName
+
+--UC10 get number of contact persons
+SELECT AddressBookType, COUNT (AddressBookType) AS NoOfContactPresent FROM AddressBook_DB GROUP BY AddressBookType
