@@ -24,3 +24,10 @@ VALUES
 ('Chhaya','Shewale','location','Pune','Maharastra',400022,1234567890,'chhaya@gamil.com'),
 ('Priya','Bhurke','location','Thane','Maharastra',400022,1234567890,'priya@gamil.com'),
 ('Nikita','Wagh','location','Pune','Maharastra',400022,1234567890,'nikita@gamil.com')
+
+--UC4
+UPDATE AddressBook_DB SET LastName = 'Patil' WHERE FirstName = 'Priya'
+UPDATE AddressBook_DB SET Address = 'Other location' WHERE LastName = 'Wagh'
+UPDATE AddressBook_DB SET City = 'Karad' WHERE LastName = 'Shewale'
+UPDATE AddressBook_DB SET State = 'Gujrat' WHERE FirstName = 'Shubham'
+UPDATE AddressBook_DB SET Zip = 40054 WHERE FirstName = 'Rohan'
